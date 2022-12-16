@@ -1,17 +1,25 @@
 {
-    "version": "stable",
-    "description": "Steam. The ultimate entertainment platform.",
+    "version": "nightly",
+    "description": "The ultimate entertainment platform.",
     "homepage": "https://store.steampowered.com/",
-    "license": "Proprietary",
-    "url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe",
+    "notes": "Changing Steam library folder is HIGHLY recommended.",
+    "url": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe#/dl.7z",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "uninstaller": {
+        "file": "uninstall.exe",
+        "args": "/S"
+    },
+    "persist": [
+        "skins",
+        "steamapps",
+        "userdata"
+    ],
     "bin": "Steam.exe",
     "shortcuts": [
         [
             "Steam.exe",
-            "Steam"
+            "Steam",
+            "-dev"
         ]
-    ],
-    "autoupdate": {
-        "url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe"
-    }
+    ]
 }
