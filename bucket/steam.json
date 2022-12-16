@@ -1,0 +1,17 @@
+{
+    "version": "stable",
+    "description": "Steam. The ultimate entertainment platform.",
+    "homepage": "https://store.steampowered.com/",
+    "license": "Proprietary",
+    "url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe",
+    "bin": "Steam.exe",
+    "shortcuts": [
+        [
+            "Steam.exe",
+            "Steam"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe"
+    }
+}
