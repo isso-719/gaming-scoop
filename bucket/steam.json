@@ -15,7 +15,7 @@
         "steamapps",
         "userdata"
     ],
-    "bin": "SteamSetup.exe",
+    "bin": "Steam.exe",
     "shortcuts": [
         [
             "Steam.exe",
