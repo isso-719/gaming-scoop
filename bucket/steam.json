@@ -1,6 +1,7 @@
 {
     "version": "nightly",
     "description": "The ultimate entertainment platform.",
+    "license" : "Proprietary",
     "homepage": "https://store.steampowered.com/",
     "notes": "Changing Steam library folder is HIGHLY recommended.",
     "url": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe#/dl.7z",
